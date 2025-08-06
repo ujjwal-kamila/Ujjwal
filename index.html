@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujjwal Kamila</title>
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+              publicKey: "PL03S-QKFpYay0lzz",
+            });
+        })();
+    </script>
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-inter">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="gradient-text">UK✨</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="nav-actions">
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun sun-icon"></i>
+                        <i class="fas fa-moon moon-icon"></i>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" id="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobile-menu">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ujjwalkamila.ujjwal/" target="_blank" class="social-link" data-tooltip="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/ujjwalkamila86" target="_blank" class="social-link" data-tooltip="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ujjwal-kamila-8a12a4262/" target="_blank" class="social-link" data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/ujjwal-kamila" target="_blank" class="social-link" data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <!-- Main Content -->
+                <div class="hero-main">
+                    <div class="hero-badge">
+                        <i class="fas fa-code"></i>
+                        <span>Available for opportunities</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Ujjwal Kamila</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Full-Stack Developer & Problem Solver
+                    </h2>
+                    <p class="hero-description">
+                        Passionate software developer with 2+ years of experience in Python. 
+                        I specialize in building scalable web applications and solving complex technical challenges. 
+                        Currently seeking full-time opportunities to contribute to innovative projects.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Hire Me
+                        </a>
+                        <button class="btn btn-secondary" id="download-cv">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Exp</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Image -->
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="image-border"></div>
+                        <div class="image-bg"></div>
+                        <img src="./public/pic.png" alt="Ujjwal Kamila" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get to know me</span>
+                <h2 class="section-title">
+                    About <span class="gradient-text">Me</span>
+                </h2>
+                <p class="section-description">
+                    Passionate developer with a strong foundation in software engineering
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3 class="about-title">Python Developer & Tech Enthusiast</h3>
+                        <p class="about-description">
+                            I'm a dedicated software developer with <strong>2+ years of experience</strong> building 
+                            robust applications using modern technologies. My expertise spans across 
+                            <strong>Python</strong>, with a strong focus on creating 
+                            scalable and maintainable solutions.
+                        </p>
+                        <p class="about-description">
+                            Currently seeking <strong>full-time opportunities</strong> where I can contribute 
+                            to innovative projects and grow alongside talented teams. I'm particularly 
+                            interested in roles involving web development, backend systems, and data-driven applications.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <h4 class="highlights-title">What I Bring:</h4>
+                        <ul class="highlights-list">
+                            <li><i class="fas fa-check-circle"></i> Strong problem-solving skills with algorithmic thinking</li>
+                            <li><i class="fas fa-check-circle"></i> Experience with web development using Django</li>
+                            <li><i class="fas fa-check-circle"></i> Proficient in database design and optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Collaborative team player with excellent communication</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-handshake"></i>
+                            Let's Work Together
+                        </a>
+                        <a href="https://github.com/ujjwal-kamila" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i>
+                            View GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4 class="feature-title">Clean Code</h4>
+                        <p class="feature-description">Writing maintainable, scalable, and well-documented code following industry best practices</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4 class="feature-title">Problem Solving</h4>
+                        <p class="feature-description">Analytical approach to breaking down complex problems into manageable solutions</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4 class="feature-title">Fast Learner</h4>
+                        <p class="feature-description">Quick to adapt to new technologies and frameworks as project requirements evolve</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="feature-title">Team Player</h4>
+                        <p class="feature-description">Collaborative mindset with experience in agile development and cross-functional teams</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">My expertise</span>
+                <h2 class="section-title">
+                    Technical <span class="gradient-text">Skills</span>
+                </h2>
+                <p class="section-description">
+                    Technologies and tools I use to bring ideas to life
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="category-title">Programming Languages</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fab fa-python"></i>
+                                    <span class="skill-name">Python</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fab fa-java"></i>
+                                    <span class="skill-name">Java</span>
+                                </div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fas fa-code"></i>
+                                    <span class="skill-name">C/C++</span>
+                                </div>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="category-title">Web Technologies</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fab fa-html5"></i>
+                                    <span class="skill-name">HTML</span>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span class="skill-name">CSS</span>
+                                </div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fab fa-js-square"></i>
+                                    <span class="skill-name">JavaScript</span>
+                                </div>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases & Tools -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="category-title">Databases & Tools</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fas fa-database"></i>
+                                    <span class="skill-name">MySQL</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span class="skill-name">Git</span>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fab fa-docker"></i>
+                                    <span class="skill-name">Docker</span>
+                                </div>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Libraries -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3 class="category-title">Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fab fa-python"></i>
+                                    <span class="skill-name">Django</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Technologies -->
+            <div class="other-skills">
+                <h3 class="other-skills-title">Other Technologies & Tools</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">
+                        <i class="fab fa-aws"></i>
+                        AWS
+                    </span>
+                    <span class="tech-tag">
+                        <i class="fab fa-linux"></i>
+                        Linux
+                    </span>
+                    <span class="tech-tag">
+                        <i class="fab fa-windows"></i>
+                        Windows
+                    </span>
+                    <span class="tech-tag">
+                        <i class="fas fa-code"></i>
+                        VS Code
+                    </span>
+                    <span class="tech-tag">
+                        <i class="fas fa-terminal"></i>
+                        Replit
+                    </span>
+                    <span class="tech-tag">
+                        <i class="fab fa-python"></i>
+                        PyCharm
+                    </span>
+                    <span class="tech-tag">
+                        <i class="fab fa-ubuntu"></i>
+                        Ubuntu
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">My work</span>
+                <h2 class="section-title">
+                    Featured <span class="gradient-text">Projects</span>
+                </h2>
+                <p class="section-description">
+                    A showcase of my technical skills and problem-solving abilities
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ujjwal-kamila/ecommerce-project" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://ecommerce-demo.netlify.app" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-category">Web Development</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            Full-stack e-commerce solution with user authentication, payment processing, and admin dashboard. Built with modern web technologies for optimal performance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">HTML</span>
+                            <span class="tech-item">CSS</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">Bootstrap</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>User Authentication & Authorization</li>
+                                <li>Payment Gateway Integration</li>
+                                <li>Responsive Admin Dashboard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Task Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ujjwal-kamila/task-manager" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://task-manager-demo.herokuapp.com" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-category">Full Stack</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management System</h3>
+                        <p class="project-description">
+                            Comprehensive project management tool with real-time collaboration, advanced filtering, and team coordination features.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">Django</span>
+                            <span class="tech-item">SQLite</span>
+                            <span class="tech-item">Bootstrap</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Real-time Task Updates</li>
+                                <li>Team Collaboration Tools</li>
+                                <li>Advanced Filtering & Search</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data Analytics Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ujjwal-kamila/data-analytics" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://analytics-dashboard-demo.streamlit.app" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-category">Data Science</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Data Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Interactive dashboard for data visualization with machine learning insights and predictive analytics capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">Pandas</span>
+                            <span class="tech-item">Matplotlib</span>
+                            <span class="tech-item">NumPy</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Interactive Data Visualization</li>
+                                <li>Machine Learning Insights</li>
+                                <li>Automated Report Generation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Inventory Management">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ujjwal-kamila/inventory-system" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://inventory-demo.vercel.app" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-category">Desktop App</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Inventory Management</h3>
+                        <p class="project-description">
+                            Robust inventory tracking system with barcode scanning, automated alerts, and comprehensive reporting features.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">C++</span>
+                            <span class="tech-item">Qt</span>
+                            <span class="tech-item">SQLite</span>
+                            <span class="tech-item">OpenCV</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Barcode Scanning Integration</li>
+                                <li>Automated Stock Alerts</li>
+                                <li>Comprehensive Reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-footer">
+                <a href="https://github.com/ujjwal-kamila" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Let's connect</span>
+                <h2 class="section-title">
+                    Get In <span class="gradient-text">Touch</span>
+                </h2>
+                <p class="section-description">
+                    Ready to discuss opportunities or collaborate on exciting projects
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3 class="contact-title">Let's Start a Conversation</h3>
+                        <p class="contact-description">
+                            I'm actively seeking <strong>full-time opportunities</strong> and exciting freelance projects. 
+                            Whether you have a specific role in mind or want to discuss potential collaborations, 
+                            I'd love to hear from you.
+                        </p>
+                    </div>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:ujjwalkamila86@gmail.com">ujjwalkamila86@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+918101193171">+91 81011 93171</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Availability</h4>
+                                <p>Open to full-time opportunities</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="contact-social">
+                        <h4>Connect with me</h4>
+                        <div class="social-links-contact">
+                            <a href="https://github.com/ujjwal-kamila" target="_blank" class="social-link-contact" data-tooltip="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ujjwal-kamila-8a12a4262/" target="_blank" class="social-link-contact" data-tooltip="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/ujjwalkamila86" target="_blank" class="social-link-contact" data-tooltip="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://leetcode.com/u/ujjwalkamila86/" target="_blank" class="social-link-contact" data-tooltip="LeetCode">
+                                <i class="fas fa-code"></i>
+                            </a>
+                            <a href="https://www.facebook.com/ujjwalkamila.ujjwal/" target="_blank" class="social-link-contact" data-tooltip="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h3>Send me a message</h3>
+                        <p>I'll get back to you within 24 hours</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your Full Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mobile">Phone Number</label>
+                                <input type="tel" id="mobile" name="mobile" required placeholder="+91 1234567890">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Job Opportunity...">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required rows="6" placeholder="Tell me about the opportunity or project you have in mind..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                            <span id="btn-text">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </span>
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div class="message success-message" id="success-message">
+                        <div class="message-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="message-content">
+                            <h4>Message Sent Successfully!</h4>
+                            <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div class="message error-message" id="error-message">
+                        <div class="message-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="message-content">
+                            <h4>Oops! Something went wrong.</h4>
+                            <p>Please try again or contact me directly via email.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>
+                        Made with <i class="fas fa-heart"></i> by 
+                        <span class="gradient-text">Ujjwal Kamila</span>
+                    </p>
+                    <p class="copyright">© 2024 All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="https://leetcode.com/u/ujjwalkamila86/" target="_blank">LeetCode</a>
+                        <span>•</span>
+                        <a href="mailto:ujjwalkamila86@gmail.com">Email</a>
+                        <span>•</span>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                
+                <button class="scroll-to-top" id="scroll-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
