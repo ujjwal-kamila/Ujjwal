@@ -24,7 +24,7 @@ mobileMenuBtn.addEventListener('click', () => {
 });
 
 // Smooth Scrolling and Navigation
-const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link, .footer-links a[href^="#"]');
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -49,7 +49,7 @@ navLinks.forEach(link => {
 
 // Active Navigation Highlighting
 function updateActiveNav() {
-    const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+    const sections = ['home', 'about', 'education', 'skills', 'projects', 'contact'];
     const scrollPosition = window.scrollY + 150;
 
     sections.forEach(sectionId => {
@@ -351,7 +351,7 @@ document.getElementById('scroll-to-top').addEventListener('click', () => {
 
 // Intersection Observer for Animations
 function initializeAnimations() {
-    const animatedElements = document.querySelectorAll('.feature-card, .skill-category, .project-card');
+    const animatedElements = document.querySelectorAll('.feature-card, .skill-category, .project-card, .education-item, .certification-card');
     
     const observerOptions = {
         threshold: 0.1,
@@ -391,7 +391,7 @@ function initializeParallax() {
 // Smooth Hover Effects
 function initializeHoverEffects() {
     // Project cards hover effect
-    const projectCards = document.querySelectorAll('.project-card');
+    const projectCards = document.querySelectorAll('.project-card, .certification-card');
     projectCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
             card.style.transform = 'translateY(-8px)';
@@ -403,7 +403,7 @@ function initializeHoverEffects() {
     });
     
     // Feature cards hover effect
-    const featureCards = document.querySelectorAll('.feature-card');
+    const featureCards = document.querySelectorAll('.feature-card, .education-item');
     featureCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
             card.style.transform = 'translateY(-4px)';
