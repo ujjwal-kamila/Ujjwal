@@ -120,133 +120,133 @@ function animateSkillBars() {
 // Initialize skill bar animation
 animateSkillBars();
 
-// Download CV Functionality
-document.getElementById('download-cv').addEventListener('click', () => {
-    const cvContent = `UJJWAL KAMILA
-Full-Stack Developer & Problem Solver
+// // Download CV Functionality
+// document.getElementById('download-cv').addEventListener('click', () => {
+//     const cvContent = `UJJWAL KAMILA
+// Full-Stack Developer & Problem Solver
 
-CONTACT INFORMATION
-Email: ujjwalkamila86@gmail.com
-Phone: +91 81011 93171
-LinkedIn: https://www.linkedin.com/in/ujjwal-kamila-8a12a4262/
-GitHub: https://github.com/ujjwal-kamila
-LeetCode: https://leetcode.com/u/ujjwalkamila86/
-Facebook: https://www.facebook.com/ujjwalkamila.ujjwal/
-Twitter: https://x.com/ujjwalkamila86
+// CONTACT INFORMATION
+// Email: ujjwalkamila86@gmail.com
+// Phone: +91 81011 93171
+// LinkedIn: https://www.linkedin.com/in/ujjwal-kamila-8a12a4262/
+// GitHub: https://github.com/ujjwal-kamila
+// LeetCode: https://leetcode.com/u/ujjwalkamila86/
+// Facebook: https://www.facebook.com/ujjwalkamila.ujjwal/
+// Twitter: https://x.com/ujjwalkamila86
 
-PROFESSIONAL SUMMARY
-Passionate Full-Stack Developer with 3+ years of experience in building scalable web applications 
-and solving complex technical challenges. Expertise in Python, Java, and C++ with a strong focus 
-on creating maintainable and efficient solutions. Currently seeking full-time opportunities to 
-contribute to innovative projects and grow alongside talented teams.
+// PROFESSIONAL SUMMARY
+// Passionate Full-Stack Developer with 3+ years of experience in building scalable web applications 
+// and solving complex technical challenges. Expertise in Python, Java, and C++ with a strong focus 
+// on creating maintainable and efficient solutions. Currently seeking full-time opportunities to 
+// contribute to innovative projects and grow alongside talented teams.
 
-TECHNICAL SKILLS
-Programming Languages:
-• Python (90%) - Advanced proficiency in web development and data analysis
-• Java (75%) - Strong foundation in object-oriented programming
-• C/C++ (80%) - System programming and algorithm implementation
+// TECHNICAL SKILLS
+// Programming Languages:
+// • Python (90%) - Advanced proficiency in web development and data analysis
+// • Java (75%) - Strong foundation in object-oriented programming
+// • C/C++ (80%) - System programming and algorithm implementation
 
-Web Technologies:
-• HTML (90%) - Semantic markup and accessibility best practices
-• CSS (80%) - Modern styling, animations, and responsive design
-• JavaScript (70%) - DOM manipulation and modern ES6+ features
+// Web Technologies:
+// • HTML (90%) - Semantic markup and accessibility best practices
+// • CSS (80%) - Modern styling, animations, and responsive design
+// • JavaScript (70%) - DOM manipulation and modern ES6+ features
 
-Databases & Tools:
-• MySQL (80%) - Database design, optimization, and complex queries
-• Git (90%) - Version control, branching strategies, and collaboration
-• Docker (60%) - Containerization and deployment workflows
+// Databases & Tools:
+// • MySQL (80%) - Database design, optimization, and complex queries
+// • Git (90%) - Version control, branching strategies, and collaboration
+// • Docker (60%) - Containerization and deployment workflows
 
-Frameworks & Libraries:
-• Django (80%) - Full-stack web development with Python
+// Frameworks & Libraries:
+// • Django (80%) - Full-stack web development with Python
 
-Other Technologies:
-• AWS - Cloud services and deployment
-• Linux/Ubuntu - Server administration and command line
-• Windows - Development environment setup
-• VS Code - Primary development environment
-• PyCharm - Python-specific development
-• Replit - Online development and collaboration
+// Other Technologies:
+// • AWS - Cloud services and deployment
+// • Linux/Ubuntu - Server administration and command line
+// • Windows - Development environment setup
+// • VS Code - Primary development environment
+// • PyCharm - Python-specific development
+// • Replit - Online development and collaboration
 
-FEATURED PROJECTS
+// FEATURED PROJECTS
 
-1. E-Commerce Platform
-   Technologies: HTML, CSS, JavaScript, Bootstrap
-   • Developed full-stack e-commerce solution with user authentication
-   • Integrated payment gateway for secure transactions
-   • Built responsive admin dashboard for inventory management
-   • GitHub: https://github.com/ujjwal-kamila/ecommerce-project
-   • Live Demo: https://ecommerce-demo.netlify.app
+// 1. E-Commerce Platform
+//    Technologies: HTML, CSS, JavaScript, Bootstrap
+//    • Developed full-stack e-commerce solution with user authentication
+//    • Integrated payment gateway for secure transactions
+//    • Built responsive admin dashboard for inventory management
+//    • GitHub: https://github.com/ujjwal-kamila/ecommerce-project
+//    • Live Demo: https://ecommerce-demo.netlify.app
 
-2. Task Management System
-   Technologies: Python, Django, SQLite, Bootstrap
-   • Created comprehensive project management tool
-   • Implemented real-time task updates and team collaboration
-   • Developed advanced filtering and search capabilities
-   • GitHub: https://github.com/ujjwal-kamila/task-manager
-   • Live Demo: https://task-manager-demo.herokuapp.com
+// 2. Task Management System
+//    Technologies: Python, Django, SQLite, Bootstrap
+//    • Created comprehensive project management tool
+//    • Implemented real-time task updates and team collaboration
+//    • Developed advanced filtering and search capabilities
+//    • GitHub: https://github.com/ujjwal-kamila/task-manager
+//    • Live Demo: https://task-manager-demo.herokuapp.com
 
-3. Data Analytics Dashboard
-   Technologies: Python, Pandas, Matplotlib, NumPy
-   • Built interactive dashboard for data visualization
-   • Integrated machine learning insights and predictive analytics
-   • Automated report generation and export functionality
-   • GitHub: https://github.com/ujjwal-kamila/data-analytics
-   • Live Demo: https://analytics-dashboard-demo.streamlit.app
+// 3. Data Analytics Dashboard
+//    Technologies: Python, Pandas, Matplotlib, NumPy
+//    • Built interactive dashboard for data visualization
+//    • Integrated machine learning insights and predictive analytics
+//    • Automated report generation and export functionality
+//    • GitHub: https://github.com/ujjwal-kamila/data-analytics
+//    • Live Demo: https://analytics-dashboard-demo.streamlit.app
 
-4. Inventory Management System
-   Technologies: C++, Qt, SQLite, OpenCV
-   • Developed robust inventory tracking system
-   • Implemented barcode scanning integration
-   • Created automated stock alerts and comprehensive reporting
-   • GitHub: https://github.com/ujjwal-kamila/inventory-system
-   • Live Demo: https://inventory-demo.vercel.app
+// 4. Inventory Management System
+//    Technologies: C++, Qt, SQLite, OpenCV
+//    • Developed robust inventory tracking system
+//    • Implemented barcode scanning integration
+//    • Created automated stock alerts and comprehensive reporting
+//    • GitHub: https://github.com/ujjwal-kamila/inventory-system
+//    • Live Demo: https://inventory-demo.vercel.app
 
-WHAT I BRING TO YOUR TEAM
-• Strong problem-solving skills with algorithmic thinking
-• Experience with full-stack web development lifecycle
-• Proficient in database design and optimization
-• Collaborative team player with excellent communication skills
-• Quick learner who adapts to new technologies and frameworks
-• Passionate about writing clean, maintainable, and scalable code
+// WHAT I BRING TO YOUR TEAM
+// • Strong problem-solving skills with algorithmic thinking
+// • Experience with full-stack web development lifecycle
+// • Proficient in database design and optimization
+// • Collaborative team player with excellent communication skills
+// • Quick learner who adapts to new technologies and frameworks
+// • Passionate about writing clean, maintainable, and scalable code
 
-CAREER OBJECTIVES
-Currently seeking full-time opportunities where I can:
-• Contribute to innovative software development projects
-• Work with cutting-edge technologies and frameworks
-• Collaborate with talented development teams
-• Grow professionally while making meaningful impact
-• Apply my technical skills to solve real-world problems
+// CAREER OBJECTIVES
+// Currently seeking full-time opportunities where I can:
+// • Contribute to innovative software development projects
+// • Work with cutting-edge technologies and frameworks
+// • Collaborate with talented development teams
+// • Grow professionally while making meaningful impact
+// • Apply my technical skills to solve real-world problems
 
-AVAILABILITY
-Open to full-time opportunities
-Available for immediate start
-Willing to relocate for the right opportunity
+// AVAILABILITY
+// Open to full-time opportunities
+// Available for immediate start
+// Willing to relocate for the right opportunity
 
-EDUCATION
-Bachelor of Technology in Computer Science
-[University Name] - [Year]
+// EDUCATION
+// Bachelor of Technology in Computer Science
+// [University Name] - [Year]
 
-CERTIFICATIONS
-• Python for Data Science and Web Development
-• Java Programming Certification
-• Full-Stack Web Development Bootcamp
-• Database Design and Management
+// CERTIFICATIONS
+// • Python for Data Science and Web Development
+// • Java Programming Certification
+// • Full-Stack Web Development Bootcamp
+// • Database Design and Management
 
----
-Generated from portfolio website: [Your Portfolio URL]
-Last updated: ${new Date().toLocaleDateString()}
-    `;
+// ---
+// Generated from portfolio website: [Your Portfolio URL]
+// Last updated: ${new Date().toLocaleDateString()}
+//     `;
 
-    const blob = new Blob([cvContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Ujjwal_Kamila_CV.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-});
+//     const blob = new Blob([cvContent], { type: 'text/plain' });
+//     const url = URL.createObjectURL(blob);
+//     const a = document.createElement('a');
+//     a.href = url;
+//     a.download = 'Ujjwal_Kamila_CV.txt';
+//     document.body.appendChild(a);
+//     a.click();
+//     document.body.removeChild(a);
+//     URL.revokeObjectURL(url);
+// });
 
 // Contact Form Handling with EmailJS
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
