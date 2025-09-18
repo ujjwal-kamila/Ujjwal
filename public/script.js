@@ -67,7 +67,7 @@ navLinks.forEach(link => {
 
 // Active Navigation Highlighting
 function updateActiveNav() {
-    const sections = ['home', 'about', 'education', 'skills', 'projects', 'certifications', 'contact'];
+    const sections = ['home', 'about', 'education', 'skills', 'projects', 'achievements', 'contact'];
     const scrollPosition = window.scrollY + 150;
 
     let currentSection = '';
@@ -155,7 +155,7 @@ document.getElementById('scroll-to-top').addEventListener('click', () => {
 
 // Intersection Observer for Animations
 function initializeAnimations() {
-    const animatedElements = document.querySelectorAll('.feature-card, .skill-category, .project-card, .certification-card');
+    const animatedElements = document.querySelectorAll('.feature-card, .skill-category, .project-card, .certification-card, .achievement-card');
     const timelineItems = document.querySelectorAll('.education-item');
 
     const observerCallback = (entries, observer) => {
