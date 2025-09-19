@@ -119,18 +119,22 @@ function animateSkillBars() {
 // Contact Form Handling with EmailJS
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
     e.preventDefault();
-    
+
+    // auto-fill timestamp field
+    const now = new Date();
+    document.getElementById('date').value = now.toLocaleString();
+
     const submitBtn = document.getElementById('submit-btn');
     const btnText = document.getElementById('btn-text');
     const successMessage = document.getElementById('success-message');
     const errorMessage = document.getElementById('error-message');
-    
+
     successMessage.classList.remove('show');
     errorMessage.classList.remove('show');
-    
+
     submitBtn.disabled = true;
     btnText.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-    
+
     try {
         await emailjs.sendForm('service_8jg1v1l', 'template_hvrwrew', e.target);
         successMessage.classList.add('show');
@@ -147,6 +151,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
         }, 5000);
     }
 });
+
 
 // Scroll to Top Functionality
 document.getElementById('scroll-to-top').addEventListener('click', () => {
