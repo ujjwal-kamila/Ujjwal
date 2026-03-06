@@ -13,6 +13,43 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', newTheme);
 });
 
+// Custom roles with cursor updated
+// new
+// --- Typing Animation Logic ---
+const typingTarget = document.getElementById('typing-text');
+const roles = ["Python Developer", "Full Stack Developer", "AI / ML Enthusiast", "Tech Researcher"];
+let roleIdx = 0;
+let charIdx = 0;
+let isDeleting = false;
+
+function type() {
+    const currentText = roles[roleIdx];
+    
+    // This line ensures NO extra spaces are added
+    typingTarget.textContent = isDeleting 
+        ? currentText.substring(0, charIdx - 1) 
+        : currentText.substring(0, charIdx + 1);
+
+    charIdx = isDeleting ? charIdx - 1 : charIdx + 1;
+
+    let speed = isDeleting ? 60 : 150;
+
+    if (!isDeleting && charIdx === currentText.length) {
+        isDeleting = true;
+        speed = 2000; // Pause at the end
+    } else if (isDeleting && charIdx === 0) {
+        isDeleting = false;
+        roleIdx = (roleIdx + 1) % roles.length;
+        speed = 500;
+    }
+
+    setTimeout(type, speed);
+}
+
+document.addEventListener('DOMContentLoaded', type);
+// new
+
+
 // Custom Cursor
 const cursorDot = document.querySelector(".cursor-dot");
 const cursorOutline = document.querySelector(".cursor-outline");
