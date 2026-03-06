@@ -520,13 +520,16 @@ body:has(a:hover, button:hover) .cursor-outline {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    /* font-size: clamp(2.5rem, 5vw, 4rem); */
+    font-size: clamp(2.2rem, 4.4vw, 3.4rem);
+    white-space: nowrap;
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
     line-height: 1.1;
     margin-bottom: 1rem;
     animation: slideUp 0.8s ease-out 0.2s both;
 }
+
 
 .hero-subtitle {
     font-size: clamp(1.25rem, 3vw, 1.75rem);
